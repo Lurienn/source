@@ -1,0 +1,50 @@
+﻿// ConsoleApplication3.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
+//
+
+#include <iostream>using namespace std;
+#include <string>
+
+using namespace std;
+
+void PrintIntro() {};
+
+
+int main()
+{
+	PrintIntro();
+	
+
+
+		// spytaj sie gracza
+		cout << "enter your guess: ";
+		string guess = "";
+		getline(cin, guess);
+		cin >> guess;
+
+		// repeat the guess back to them
+		cout << "your guess was: " << guess << endl;
+		cout << endl;
+		return 0;
+		
+		void PrintIntro(); {
+			// wprowadzenie
+			constexpr int WORLD_LENGTH = 9;
+			std::cout << "welcome to bulls and cows" << std::endl;
+			std::cout << "Guess the " << WORLD_LENGTH;
+			cout << " letter isogram I'm thinking of?\n";
+			cout << endl;
+			return;
+}
+
+// Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
+// Debugowanie programu: F5 lub menu Debugowanie > Rozpocznij debugowanie
+
+// Porady dotyczące rozpoczynania pracy:
+//   1. Użyj okna Eksploratora rozwiązań, aby dodać pliki i zarządzać nimi
+//   2. Użyj okna programu Team Explorer, aby nawiązać połączenie z kontrolą źródła
+//   3. Użyj okna Dane wyjściowe, aby sprawdzić dane wyjściowe kompilacji i inne komunikaty
+//   4. Użyj okna Lista błędów, aby zobaczyć błędy
+//   5. Wybierz pozycję Projekt > Dodaj nowy element, aby utworzyć nowe pliki kodu, lub wybierz pozycję Projekt > Dodaj istniejący element, aby dodać istniejące pliku kodu do projektu
+//   6. Aby w przyszłości ponownie otworzyć ten projekt, przejdź do pozycji Plik > Otwórz > Projekt i wybierz plik sln
+
+
