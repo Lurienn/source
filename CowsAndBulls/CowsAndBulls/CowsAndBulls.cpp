@@ -1,25 +1,34 @@
 ﻿
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 void PrintIntro();
-string GetGuessandPrintBack();
+void PlayGame();
+string GetGuess();
 
-//start aplikacji
+//start gry
 int main()
 {
 	PrintIntro();
+	PlayGame();
+	return 0;
+}
 
+void PlayGame()
+{
 	// loopsy i powroty
 	constexpr int NUMBER_OF_TURNS = 5;
 	for (int count = 1; count <= NUMBER_OF_TURNS; count++)
 	{
-		GetGuessandPrintBack();
+		string Guess = "";
+		Guess = GetGuess();
+	
+		cout << "Twoja odpowiedz to: " << Guess << endl;
+		GetGuess();
 		cout << endl;
 	}
-
-	return 0;
 }
 
 // wprowadzenie
@@ -33,13 +42,12 @@ void PrintIntro()
 	return;
 }
 //zapytanie
-string GetGuessandPrintBack()
+string GetGuess()
 {
 	cout << "Zapisz odpowiedz: ";
 	string Guess = "";
 	getline(cin, Guess);
 
-	//prints the guess
-	cout << "Twoja odpowiedz to: " << Guess << endl;
+	
 	return Guess;
 }

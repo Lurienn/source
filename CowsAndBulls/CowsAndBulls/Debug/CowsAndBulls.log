@@ -1,2 +1,1 @@
-﻿  CowsAndBulls.cpp
-  CowsAndBulls.vcxproj -> D:\GitHub_sourcetree_projekts\CowsAndBulls\Debug\CowsAndBulls.exe
+﻿LINK : fatal error LNK1168: nie można otworzyć pliku D:\GitHub_sourcetree_projekts\CowsAndBulls\Debug\CowsAndBulls.exe do zapisu
