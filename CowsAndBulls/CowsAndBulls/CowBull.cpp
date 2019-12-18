@@ -1,18 +1,12 @@
 #include "CowBull.h"
 
+int CowBullGame::GetMaxTries() const { return MyMaxTries; }
+int CowBullGame::GetCurrentTry() { return MyCurrentTry; }
+
+
 void CowBullGame::Reset()
 {
 	return;
-}
-
-int CowBullGame::GetMaxTries()
-{
-	return MyMaxTries;
-}
-
-int CowBullGame::GetCurrentTry()
-{
-	return 0;
 }
 
 bool CowBullGame::IsGameWon()

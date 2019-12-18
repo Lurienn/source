@@ -10,6 +10,8 @@ void PlayGame();
 std::string GetGuess();
 bool AskToPlayAgain();
 
+CowBullGame BCGame; // instatncja nowej gry
+
 //start gry
 int main()
 {
@@ -18,7 +20,7 @@ int main()
 	{
 		PrintIntro();
 		PlayGame();
-		bPlayAgain - AskToPlayAgain();
+		//bPlayAgain - AskToPlayAgain();
 	} 
 	while (bPlayAgain);
 	return 0;
@@ -26,10 +28,9 @@ int main()
 
 void PlayGame()
 {
-	CowBullGame BCGame; // instatncja nowej gry
+	
 	int MaxTries = BCGame.GetMaxTries();
 	std::cout << MaxTries << std::endl;
-
 	// loopsy i powroty
 	constexpr int NUMBER_OF_TURNS = 5;
 	for (int count = 1; count <= NUMBER_OF_TURNS; count++)
@@ -56,7 +57,9 @@ void PrintIntro()
 //zapytanie
 std::string GetGuess()
 {
-	std::cout << "Zapisz odpowiedz: ";
+	int CurrentTry = BCGame.GetMaxTries();
+
+	std::cout << "Try" << CurrentTry << ". Zapisz odpowiedz: ";
 	std::string Guess = "";
 	std::getline(std::cin, Guess);
 return Guess;

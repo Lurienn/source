@@ -4,7 +4,7 @@ class CowBullGame
 {
 public:
 	void Reset(); //nie wiem co to jest
-	int GetMaxTries();
+	int GetMaxTries() const;
 	int GetCurrentTry();
 	bool IsGameWon();
 	bool CheckGuessValidity(std::string);
